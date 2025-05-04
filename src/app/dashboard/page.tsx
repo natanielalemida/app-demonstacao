@@ -42,7 +42,6 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Cards de Métricas */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <MetricCard title="Total de Vendas" value="R$ 24.560" change="+12%" positive />
         <MetricCard title="Usuários Ativos" value="8.742" change="+5%" positive />
@@ -50,7 +49,6 @@ export default function DashboardPage() {
         <MetricCard title="Novos Clientes" value="324" change="+18%" positive />
       </div>
 
-      {/* Gráficos Principais */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <ChartCard title="Vendas Mensais">
           <ResponsiveContainer width="100%" height={300}>
@@ -80,7 +78,6 @@ export default function DashboardPage() {
         </ChartCard>
       </div>
 
-      {/* Segunda Linha de Gráficos */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         <ChartCard title="Dispositivos Utilizados">
           <ResponsiveContainer width="100%" height={300}>

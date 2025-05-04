@@ -5,9 +5,7 @@ import { useLogin } from './hooks/useLogin';
 
 export default function LoginPage() {
  const {email, emailError, isEmailValid, isTouched, password, setIsTouched, setPassword, setEmailError, showPassword, togglePasswordVisibility, handleEmailChange} = useSetup()
-const {handleSubmit} = useLogin({email, password, isEmailValid, setEmailError, setIsTouched})
-
-
+ const {handleSubmit} = useLogin({email, password, isEmailValid, setEmailError, setIsTouched})
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
